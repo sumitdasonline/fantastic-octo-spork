@@ -27,3 +27,8 @@ Only 2 end to end tests.
 #### Create a team
  - Usimg the similar 2 buttons (The plus sign on top and the text button) creating a team.  
  - And validating the request being sent from frontend is similar to the inputs provided
+
+## Reporting
+
+- After the test is run *(via npx cypress run)* you can goto `cypress/reports` folder and see a mochawesome report being generated.
+- You can also see the test reports in ci via [actions](https://github.com/sumitdasonline/fantastic-octo-spork/actions) tab *(Not sure if you can run it)*.
