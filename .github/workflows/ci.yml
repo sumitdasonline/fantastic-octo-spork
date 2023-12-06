@@ -13,12 +13,12 @@ jobs:
             - name: Cypress run
               uses: cypress-io/github-action@v6
               env:
-                CYPRESS_EMAIL: ${{ secrets.EMAIL }}
-                CYPRESS_PASSWORD: ${{ secrets.PASSWORD }}
+                CYPRESS_email: ${{ secrets.EMAIL }}
+                CYPRESS_password: ${{ secrets.PASSWORD }}
             
             - name: Upload HTML report
               uses: actions/upload-artifact@master
               with:
                 name: html-report
-                path: reports/
+                path: cypress/reports/
                 retention-days: 5
