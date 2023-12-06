@@ -3,6 +3,7 @@ import { defineConfig } from "cypress";
 export default defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on),
       on('task', {
         log(message) {
           console.log(message)
@@ -10,7 +11,7 @@ export default defineConfig({
           return null
         },
       })
-    },
+  },
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 120000,
     baseUrl: "https://app.trengo.com/",
@@ -18,6 +19,7 @@ export default defineConfig({
     watchForFileChanges: false,
     modifyObstructiveCode: false,
     video: true,
-    supportFile: "cypress/support/commands.ts"
+    supportFile: "cypress/support/commands.ts",
+    reporter: "cypress-mochawesome-reporter"
   },
 });
