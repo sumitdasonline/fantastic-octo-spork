@@ -20,5 +20,5 @@ jobs:
               uses: actions/upload-artifact@master
               with:
                 name: html-report
-                path: reports/
+                path: cypress/reports/
                 retention-days: 5
