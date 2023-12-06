@@ -14,6 +14,7 @@ Only 2 end to end tests.
 ### What is NOT here:
  - Since this is an End to end test, did not include any field validations of frontend. 
  - Field validations should be part of component test which should done at code level. 
+ - The tests should start with a clean account. Like a new account. I do not know the architecture of the product well enough to do that and pollute with lots of floating account.
 
 ### Pre and post:
  - Logging in using API in *before* hook
