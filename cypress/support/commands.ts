@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 export { };
+import 'cypress-mochawesome-reporter/register';
+
 
 Cypress.Commands.add("TestStep", { prevSubject: "optional" }, (subject, stepDefinition) => {
     if (subject === undefined) {

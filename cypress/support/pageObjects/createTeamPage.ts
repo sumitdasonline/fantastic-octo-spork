@@ -1,4 +1,3 @@
-import { CyHttpMessages, Interception } from "cypress/types/net-stubbing"
 import { multiSelect } from "../utils"
 import { AdminPage } from "./adminPage"
 
