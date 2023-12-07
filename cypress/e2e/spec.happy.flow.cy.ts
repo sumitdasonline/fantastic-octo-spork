@@ -29,6 +29,7 @@ describe('Trengo', () => {
     })
 
     describe('Custom Channel tests', () => {
+      // 0 for + button and 1 for the button with text
       [0, 1].forEach(i => {
         it('Create custom channel and triggeer a message', () => {
           cy.TestStep('Open custom channel creation form').then(() => {
@@ -59,6 +60,7 @@ describe('Trengo', () => {
     })
 
     describe('Create team test', () => {
+      // 0 for + button and 1 for the button with text
       [0, 1].forEach(i => {
         const teamName = generateRandomString(5)
         const employees = ['Employee 1', 'Employee 2']
